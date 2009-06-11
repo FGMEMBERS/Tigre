@@ -138,7 +138,7 @@ Eurocopter EC 665 "Tigre" simulation config.
       <file>Aircraft/Tigre/Nasal/bladevisible.nas</file>
       <file>Aircraft/Tigre/Nasal/fcs-management.nas</file>
 
-      <file>Aircraft/Generic/fcs.nas</file>
+      <file>Aircraft/Generic/helicopter-fcs.nas</file>
     </tigre>
   </nasal>
 
