@@ -17,48 +17,31 @@
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>profondeurG</object-name>
-    <object-name>profondeurD</object-name>
-    <object-name>vertical</object-name>
-    <object-name>entreemoteurs</object-name>
-    <object-name>attachemoteurs</object-name>
+    <object-name>radar</object-name>
+    <object-name>air1</object-name>
+    <object-name>cache</object-name>
+    <object-name>echappes</object-name>
     <object-name>derive</object-name>
-    <object-name>direction</object-name>
-    <object-name>trimdir</object-name>
-    <object-name>supports</object-name>
-    <object-name>attaches</object-name>
-    <object-name>portemissiles</object-name>
-    <object-name>boutsailes</object-name>
-    <object-name>trous</object-name>
-    <object-name>antenne</object-name>
-    <object-name>roueA</object-name>
-    <object-name>axeAB</object-name>
-    <object-name>axeAH</object-name>
+    <object-name>plansvertical</object-name>
     <object-name>roueG</object-name>
-    <object-name>porteG</object-name>
-    <object-name>porteAG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>grille</object-name>
+    <object-name>supportgun</object-name>
+    <object-name>gun</object-name>
+    <object-name>trous</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeG3</object-name>
-    <object-name>axeG4</object-name>
-    <object-name>roueD</object-name>
-    <object-name>porteD</object-name>
-    <object-name>porteAD</object-name>
     <object-name>axeD1</object-name>
     <object-name>axeD2</object-name>
     <object-name>axeD3</object-name>
-    <object-name>axeD4</object-name>
-    <object-name>bossage</object-name>
-    <object-name>ailettes</object-name>
-    <object-name>mitrailleuse</object-name>
 
     <!-- Transparence -->
     <object-name>vitres</object-name>
-    <object-name>lampeG</object-name>
-    <object-name>lampeD</object-name>
-    <object-name>lampetoit</object-name>
-    <object-name>vitreavant</object-name>
+    <object-name>entreeair</object-name>
   </animation>
 
   <animation>
@@ -66,57 +49,39 @@
     <shader>chrome</shader>
     <texture>glass_shader.png</texture>
     <object-name>vitres</object-name>
-    <object-name>vitreavant</object-name>
   </animation>
 
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
-    <object-name>lampeG</object-name>
-    <object-name>lampeD</object-name>
-    <object-name>lampetoit</object-name>
-    <object-name>vitreavant</object-name>
+    <object-name>entreeair</object-name>
   </animation>
 
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>profondeurG</object-name>
-    <object-name>profondeurD</object-name>
-    <object-name>vertical</object-name>
-    <object-name>entreemoteurs</object-name>
-    <object-name>attachemoteurs</object-name>
+    <object-name>radar</object-name>
+    <object-name>air1</object-name>
+    <object-name>cache</object-name>
+    <object-name>echappes</object-name>
     <object-name>derive</object-name>
-    <object-name>direction</object-name>
-    <object-name>trimdir</object-name>
-    <object-name>supports</object-name>
-    <object-name>attaches</object-name>
-    <object-name>portemissiles</object-name>
-    <object-name>boutsailes</object-name>
-    <object-name>trous</object-name>
-    <object-name>antenne</object-name>
-    <object-name>roueA</object-name>
-    <object-name>axeAB</object-name>
-    <object-name>axeAH</object-name>
+    <object-name>plansvertical</object-name>
     <object-name>roueG</object-name>
-    <object-name>porteG</object-name>
-    <object-name>porteAG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>grille</object-name>
+    <object-name>supportgun</object-name>
+    <object-name>gun</object-name>
+    <object-name>trous</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeG3</object-name>
-    <object-name>axeG4</object-name>
-    <object-name>roueD</object-name>
-    <object-name>porteD</object-name>
-    <object-name>porteAD</object-name>
     <object-name>axeD1</object-name>
     <object-name>axeD2</object-name>
     <object-name>axeD3</object-name>
-    <object-name>axeD4</object-name>
-    <object-name>bossage</object-name>
-    <object-name>ailettes</object-name>
-    <object-name>mitrailleuse</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
