@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Tigre/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -23,15 +37,17 @@
     <object-name>echappes</object-name>
     <object-name>derive</object-name>
     <object-name>plansvertical</object-name>
+    <object-name>grille</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
+
+    <object-name>trous</object-name>
     <object-name>roueG</object-name>
     <object-name>roueD</object-name>
     <object-name>roueA</object-name>
-    <object-name>grille</object-name>
+    <object-name>attachgun</object-name>
     <object-name>supportgun</object-name>
     <object-name>gun</object-name>
-    <object-name>trous</object-name>
-    <object-name>cacheB</object-name>
-    <object-name>cacheH</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeG3</object-name>
@@ -40,19 +56,6 @@
     <object-name>axeD3</object-name>
 
     <!-- Transparence -->
-    <object-name>vitres</object-name>
-    <object-name>entreeair</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>vitres</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
     <object-name>vitres</object-name>
     <object-name>entreeair</object-name>
   </animation>
@@ -67,15 +70,17 @@
     <object-name>echappes</object-name>
     <object-name>derive</object-name>
     <object-name>plansvertical</object-name>
+    <object-name>grille</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
+
+    <object-name>trous</object-name>
     <object-name>roueG</object-name>
     <object-name>roueD</object-name>
     <object-name>roueA</object-name>
-    <object-name>grille</object-name>
+    <object-name>attachgun</object-name>
     <object-name>supportgun</object-name>
     <object-name>gun</object-name>
-    <object-name>trous</object-name>
-    <object-name>cacheB</object-name>
-    <object-name>cacheH</object-name>
     <object-name>axeG1</object-name>
     <object-name>axeG2</object-name>
     <object-name>axeG3</object-name>
@@ -115,6 +120,34 @@
       <shininess-prop>shininess</shininess-prop>
     </shininess>
 -->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>radar</object-name>
+    <object-name>air1</object-name>
+    <object-name>cache</object-name>
+    <object-name>echappes</object-name>
+    <object-name>derive</object-name>
+    <object-name>plansvertical</object-name>
+    <object-name>grille</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>entreeair</object-name>
   </animation>
 
   <!-- Rotor principale -->

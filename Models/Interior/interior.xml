@@ -8,6 +8,9 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>inttour</object-name>
+    <object-name>fond</object-name>
+    <object-name>siegeavant</object-name>
+    <object-name>siegearriere</object-name>
 
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
@@ -16,7 +19,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>intvitres</object-name>
   </animation>
 
@@ -25,26 +28,26 @@
     <object-name>intvitres</object-name>
   </animation>
 
-  <!-- Planche de bord
+  <!-- Planche de bord -->
   <model>
-    <path>Aircraft/Ka-50/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/Tigre/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -2.653 </x-m>
+      <x-m> -3.994 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.206 </z-m>
+      <z-m> -0.057 </z-m>
       <roll-deg>    0 </roll-deg>
       <pitch-deg>   0 </pitch-deg>
       <heading-deg> 0 </heading-deg>
     </offsets>
-  </model> -->
+  </model>
 
   <!-- Pilote -->
   <model>
     <path>Aircraft/Tigre/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -3.937 </x-m>
+      <x-m> -3.964 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m> -0.291 </z-m>
+      <z-m> -0.413 </z-m>
     </offsets>
   </model>
 
@@ -52,9 +55,9 @@
   <model>
     <path>Aircraft/Tigre/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -2.733 </x-m>
+      <x-m> -2.472 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.108 </z-m>
+      <z-m> -0.004 </z-m>
     </offsets>
   </model>
 
