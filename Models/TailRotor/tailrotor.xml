@@ -6,6 +6,10 @@
 
   <animation>
     <object-name>tailrotor</object-name>
+    <object-name>tailrotor2</object-name>
+    <object-name>tailrotor3</object-name>
+    <object-name>tailrotor4</object-name>
+    <object-name>tailrotor5</object-name>
   </animation>
 
   <!-- Blades -->
@@ -13,12 +17,12 @@
     <name>Blade1</name>
     <path>Aircraft/Tigre/Models/TailRotor/blade.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.096 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -26,12 +30,12 @@
     <name>Blade2</name>
     <path>Aircraft/Tigre/Models/TailRotor/blade.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
-      <heading-deg> 120 </heading-deg>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.096 </z-m>
+      <roll-deg>       0 </roll-deg>
+      <pitch-deg>      0 </pitch-deg>
+      <heading-deg> -210 </heading-deg>
     </offsets>
   </model>
 
@@ -39,18 +43,22 @@
     <name>Blade3</name>
     <path>Aircraft/Tigre/Models/TailRotor/blade.xml</path>
     <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>      0 </roll-deg>
-      <pitch-deg>     0 </pitch-deg>
-      <heading-deg> 240 </heading-deg>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.096 </z-m>
+      <roll-deg>       0 </roll-deg>
+      <pitch-deg>      0 </pitch-deg>
+      <heading-deg> -330 </heading-deg>
     </offsets>
   </model>
 
   <animation>
     <name>rotorcomplet</name>
-    <object-name>rotortail</object-name>
+    <object-name>tailrotor</object-name>
+    <object-name>tailrotor2</object-name>
+    <object-name>tailrotor3</object-name>
+    <object-name>tailrotor4</object-name>
+    <object-name>tailrotor5</object-name>
     <object-name>Blade1</object-name>
     <object-name>Blade2</object-name>
     <object-name>Blade3</object-name>
@@ -69,7 +77,7 @@
     <axis>
       <x>  0 </x>
       <y>  0 </y>
-      <z>  1 </z>
+      <z> -1 </z>
     </axis>
   </animation>
 </PropertyList>

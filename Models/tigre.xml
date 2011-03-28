@@ -40,20 +40,25 @@
     <object-name>grille</object-name>
     <object-name>cacheB</object-name>
     <object-name>cacheH</object-name>
+    <object-name>poignees</object-name>
 
     <object-name>trous</object-name>
+    <object-name>attacheessuis</object-name>
+    <object-name>essuisglace</object-name>
+    <object-name>tuyau</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeG3</object-name>
     <object-name>roueG</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>attachgun</object-name>
     <object-name>supportgun</object-name>
     <object-name>gun</object-name>
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeG3</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>axeD3</object-name>
 
     <!-- Transparence -->
     <object-name>vitres</object-name>
@@ -73,20 +78,25 @@
     <object-name>grille</object-name>
     <object-name>cacheB</object-name>
     <object-name>cacheH</object-name>
+    <object-name>poignees</object-name>
 
     <object-name>trous</object-name>
+    <object-name>attacheessuis</object-name>
+    <object-name>essuisglace</object-name>
+    <object-name>tuyau</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeG3</object-name>
     <object-name>roueG</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>axeD3</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>attachgun</object-name>
     <object-name>supportgun</object-name>
     <object-name>gun</object-name>
-    <object-name>axeG1</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeG3</object-name>
-    <object-name>axeD1</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>axeD3</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -135,6 +145,7 @@
     <object-name>grille</object-name>
     <object-name>cacheB</object-name>
     <object-name>cacheH</object-name>
+    <object-name>poignees</object-name>
   </effect>
 
   <animation>

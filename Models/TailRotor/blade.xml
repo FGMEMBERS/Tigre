@@ -62,7 +62,8 @@
   <animation>
     <type>rotate</type>
     <object-name>blade</object-name>
-    <property>rotors/tail/blade/incidence-deg</property>
+    <property>rotors/tail/roll-deg</property>
+    <factor> 15 </factor>
     <center>
        <x-m> 0 </x-m>
        <y-m> 0 </y-m>
