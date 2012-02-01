@@ -161,6 +161,21 @@
     <object-name>entreeair</object-name>
   </animation>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/Tigre/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -1.363 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.735 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Intérieur -->
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/interior.xml</path>
+  </model>
+
   <!-- Rotor principale -->
   <model>
     <path>Aircraft/Tigre/Models/MainRotor/mainrotor.xml</path>
@@ -168,9 +183,6 @@
       <x-m> -1.363 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  1.780 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -182,48 +194,8 @@
       <y-m>  0.411 </y-m>
       <z-m>  0.992 </z-m>
       <roll-deg>  -90 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
-
-  <!-- Intérieur -->
-  <model>
-    <path>Aircraft/Tigre/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Rotation de la roue avant en fonction de la gouverne de direction
-  <animation>
-    <name>EnsembleRoueAvant</name>
-    <object-name>roueA</object-name>
-    <object-name>axeAH</object-name>
-    <object-name>axeAB</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>EnsembleRoueAvant</object-name>
-    <property>/controls/flight/rudder</property>
-    <factor> 30.0 </factor>
-    <center>
-      <x-m> -3.465 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.886 </z-m>
-    </center>
-    <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z> -1.000 </z>
-    </axis>
-  </animation> -->
 
   <!-- Compression
   <animation>
@@ -237,14 +209,14 @@
     <object-name>RoueAvant</object-name>
     <property>/gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.000 </ind><dep> -0.02 </dep></entry>
-      <entry><ind> 0.040 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.000 </ind><dep>  0.07 </dep></entry>
+      <entry><ind> 0.00 </ind><dep> -0.02 </dep></entry>
+      <entry><ind> 0.04 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.07 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0.0 </x>
-      <y> 0.0 </y>
-      <z> 1.0 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
  
@@ -259,9 +231,9 @@
     <object-name>RoueGauche</object-name>
     <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.000 </ind><dep>   5 </dep></entry>
-      <entry><ind> 0.050 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1.000 </ind><dep> -15 </dep></entry>
+      <entry><ind> 0.00 </ind><dep>   5 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -15 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.784 </x-m>
@@ -269,9 +241,9 @@
       <z-m> -0.845 </z-m>
     </center>
     <axis>
-      <x> 0.0 </x>
-      <y> 1.0 </y>
-      <z> 0.0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
  
@@ -280,14 +252,14 @@
     <object-name>axeG3</object-name>
     <property>/gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.000 </ind><dep> -0.01 </dep></entry>
-      <entry><ind> 0.050 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.000 </ind><dep>  0.06 </dep></entry>
+      <entry><ind> 0.00 </ind><dep> -0.01 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.06 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0.0 </x>
-      <y> 0.0 </y>
-      <z> 1.0 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
  
@@ -302,9 +274,9 @@
     <object-name>RoueDroite</object-name>
     <property>/gear/gear[2]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.000 </ind><dep>   5 </dep></entry>
-      <entry><ind> 0.050 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1.000 </ind><dep> -15 </dep></entry>
+      <entry><ind> 0.00 </ind><dep>   5 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -15 </dep></entry>
     </interpolation>
     <center>
       <x-m>  0.784 </x-m>
@@ -312,9 +284,9 @@
       <z-m> -0.845 </z-m>
     </center>
     <axis>
-      <x> 0.0 </x>
-      <y> 1.0 </y>
-      <z> 0.0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
  
@@ -323,96 +295,96 @@
     <object-name>axeD3</object-name>
     <property>/gear/gear[2]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0.000 </ind><dep> -0.01 </dep></entry>
-      <entry><ind> 0.050 </ind><dep>  0.00 </dep></entry>
-      <entry><ind> 1.000 </ind><dep>  0.06 </dep></entry>
+      <entry><ind> 0.00 </ind><dep> -0.01 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.06 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0.0 </x>
-      <y> 0.0 </y>
-      <z> 1.0 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation> -->
  
-  <!-- Rotation des roues lors du roulage
-  <animation>
-    <type>spin</type>
-    <object-name>roueA</object-name>
-    <property>/gear/gear[0]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -3.353 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -1.299 </z-m>
-    </center>
-    <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
-    </axis>
-  </animation>
-
+  <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>
     <object-name>roueG</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>/gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
-      <x-m>  1.386 </x-m>
-      <y-m> -1.351 </y-m>
-      <z-m> -1.143 </z-m>
+      <x-m> -2.813 </x-m>
+      <y-m> -1.190 </y-m>
+      <z-m> -1.648 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
   <animation>
     <type>spin</type>
     <object-name>roueD</object-name>
+    <property>/gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.813 </x-m>
+      <y-m>  1.190 </y-m>
+      <z-m> -1.648 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
     <property>/gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
-      <x-m>  1.386 </x-m>
-      <y-m>  1.351 </y-m>
-      <z-m> -1.143 </z-m>
+      <x-m>  4.818 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.768 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
-  </animation> -->
+  </animation>
 
-  <!-- Effets lumineux
+  <!-- Effets lumineux -->
   <model>
-    <path>Aircraft/Ka-50/Models/light/beacon.xml</path>
+    <path>Aircraft/Tigre/Models/lights/beacon.xml</path>
     <offsets>
-      <x-m> 3.018 </x-m>
+      <x-m> 6.738 </x-m>
       <y-m> 0.000 </y-m>
-      <z-m> 0.935 </z-m>
+      <z-m> 1.429 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Ka-50/Models/light/RedLight.xml</path>
+    <path>Aircraft/Tigre/Models/lights/RedLight.xml</path>
     <offsets>
-      <x-m>  0.254 </x-m>
-      <y-m> -3.699 </y-m>
-      <z-m>  0.154 </z-m>
+      <x-m> -1.668 </x-m>
+      <y-m> -2.154 </y-m>
+      <z-m> -0.252 </z-m>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Ka-50/Models/light/GreenLight.xml</path>
+    <path>Aircraft/Tigre/Models/lights/GreenLight.xml</path>
     <offsets>
-      <x-m> 0.254 </x-m>
-      <y-m> 3.699 </y-m>
-      <z-m> 0.154 </z-m>
+      <x-m> -1.668 </x-m>
+      <y-m>  2.154 </y-m>
+      <z-m> -0.252 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
 </PropertyList>
 

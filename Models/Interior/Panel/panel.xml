@@ -10,6 +10,201 @@
 
     <!-- Objets transparents -->
   </animation>
+  
+  <!-- Gunner  instruments -->
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/topmfd.xml</path>
+    <offsets>
+      <x-m> 0.597 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.248 </z-m>
+      <pitch-deg>  -18 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/bottommfd.xml</path>
+    <offsets>
+      <x-m> 0.656 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.064 </z-m>
+      <pitch-deg>  -18</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/mids/mids-p.xml</path>
+    <offsets>
+      <x-m> 0.702 </x-m>
+      <y-m> 0.167 </y-m>
+      <z-m> 0.110 </z-m>
+      <pitch-deg> -18 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/mfd3.xml</path>
+    <offsets>
+      <x-m>  0.720 </x-m>
+      <y-m> -0.148 </y-m>
+      <z-m>  0.029 </z-m>
+      <pitch-deg> -18 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/switch/panel1.xml</path>
+    <offsets>
+      <x-m> 0.719 </x-m>
+      <y-m> 0.167 </y-m>
+      <z-m> 0.057 </z-m>
+      <pitch-deg> -18 </pitch-deg>
+    </offsets>
+  </model>
+  
+<!-- ****** -->
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/buttons/1button.xml</path>
+    <offsets>
+      <x-m> 0.695 </x-m>
+      <y-m> 0.250 </y-m>
+      <z-m> 0.110 </z-m>
+      <pitch-deg> -20 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/buttons/1button-b.xml</path>
+    <offsets>
+      <x-m> 0.685 </x-m>
+      <y-m> 0.139 </y-m>
+      <z-m> 0.154 </z-m>
+      <pitch-deg> -17 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> 0.710 </x-m>
+      <y-m> 0.270 </y-m>
+      <z-m> 0.057 </z-m>
+      <pitch-deg> -20</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/chronograph/chronograph2.xml</path>
+    <offsets>
+      <x-m>  0.689 </x-m>
+      <y-m> -0.118 </y-m>
+      <z-m>  0.148 </z-m>
+      <pitch-deg> -17 </pitch-deg>
+    </offsets>
+  </model>
+   
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/vents/vent2.xml</path>
+    <offsets>
+      <x-m>  0.710 </x-m>
+      <y-m> -0.290 </y-m>
+      <z-m>  0.057 </z-m>
+      <pitch-deg>  -20 </pitch-deg>
+    </offsets>
+  </model>
+ 
+ <!-- Pilots Instruments -->
+ <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/topmfd.xml</path>
+    <offsets>
+      <x-m> -0.657 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.150 </z-m>
+    </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/bottommfd.xml</path>
+    <offsets>
+      <x-m> -0.657 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.343 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/mids/mids-p.xml</path>
+    <offsets>
+      <x-m> -0.600 </x-m>
+      <y-m>  0.167 </y-m>
+      <z-m> -0.312 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/mfd3.xml</path>
+    <offsets>
+      <x-m> -0.608 </x-m>
+      <y-m> -0.148 </y-m>
+      <z-m> -0.347 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/switch/panel1.xml</path>
+    <offsets>
+      <x-m> -0.601 </x-m>
+      <y-m>  0.167 </y-m>
+      <z-m> -0.367 </z-m>
+    </offsets>
+  </model>
+  
+<!-- ****** -->  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/buttons/1button.xml</path>
+    <offsets>
+      <x-m> -0.589 </x-m>
+      <y-m>  0.263 </y-m>
+      <z-m> -0.312 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/buttons/1button-b.xml</path>
+    <offsets>
+      <x-m> -0.593 </x-m>
+      <y-m>  0.148 </y-m>
+      <z-m> -0.250 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/vents/vent1.xml</path>
+    <offsets>
+      <x-m> -0.593 </x-m>
+      <y-m>  0.290 </y-m>
+      <z-m> -0.370 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/chronograph/chronograph2.xml</path>
+    <offsets>
+      <x-m> -0.593 </x-m>
+      <y-m> -0.138 </y-m>
+      <z-m> -0.265 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/vents/vent2.xml</path>
+    <offsets>
+      <x-m> -0.593 </x-m>
+      <y-m> -0.310 </y-m>
+      <z-m> -0.370 </z-m>
+    </offsets>
+  </model>
  
 </PropertyList>
 

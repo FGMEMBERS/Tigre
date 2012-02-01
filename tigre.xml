@@ -86,15 +86,13 @@
          downwashfactor="0.3"
          rotor-correction-factor="0.80"
          balance="0.998">
-	 
-	 			 <control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true"
-					 src0="-1.0" src1="1.0" dst0="-0.66" dst1="0.66"/>
-		<control-input axis="/controls/flight/fcs/tail-rotor/throttle" control="COLLECTIVE"
-					   src0="-1.0" src1="1.0"
-					   dst0="-1.0" dst1="1.0"/>
-	 
-     <!--<control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true" src0="-1.0" src1="1.0" dst0="-0.66" dst1="0.66"/>
-         <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE" src0="0.0" src1="0.6" dst0=".45" dst1="-.50"/>-->
+ 
+         <control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true" src0="-1.0" src1="1.0" dst0="-0.66" dst1="0.66"/>
+         <control-input axis="/controls/flight/fcs/tail-rotor/throttle" control="COLLECTIVE" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
+         <!--
+         <control-input axis="/controls/flight/fcs/yaw" control="COLLECTIVE" invert="true" src0="-1.0" src1="1.0" dst0="-0.66" dst1="0.66"/>
+         <control-input axis="/controls/engines/engine[0]/throttle" control="COLLECTIVE" src0="0.0" src1="0.6" dst0=".45" dst1="-.50"/>
+         -->
   </rotor>
 
   <!-- only the engine power below is a known good value -->
@@ -238,8 +236,8 @@
   <hitch name="aerotow" 
          x="2.6" y="0.0" z="-0.7" 
          force-is-calculated-by-other="0">
-         <tow length="30" 
-              weight-per-meter="0.035" 
+         <tow length="30"
+              weight-per-meter="0.035"
               elastic-constant="9000" 
               break-force="80000" 
               mp-auto-connect-period="0.0"/>
@@ -250,4 +248,3 @@
   </hitch>
 
 </airplane>
-

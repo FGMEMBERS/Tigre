@@ -12,12 +12,19 @@ Eurocopter EC 665 "Tigre" simulation config.
 
     <description>Eurocopter EC 665 (Yasim)</description>
     <author>BARANGER Emmanuel (3D)</author>
-    <status>alpha</status>
+    <status>alpha 0.3</status>
     <license>GPL v2</license>
 
     <flight-model>yasim</flight-model>
     <aero>tigre</aero>
     <fuel-fraction>0.8</fuel-fraction>
+
+    <rating>
+      <FDM type="int">     1 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   2 </model>
+    </rating>
 
     <startup>
       <splash-texture>Aircraft/Tigre/tigre-splash.png</splash-texture>
@@ -38,8 +45,55 @@ Eurocopter EC 665 "Tigre" simulation config.
         <rotor-step-deg type="float">-1.0</rotor-step-deg>
       </tigre>
     </model>
+	
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
 
-   <weight n="0">
+    <hud>
+      <path n="1">Aircraft/Tigre/Hud/hud.xml</path>
+      <visibility n="1">true</visibility>
+      <palette>
+        <color n="0">
+          <alpha type="float">0.85</alpha>
+          <antialiased type="bool">true</antialiased>
+          <brightness type="float">0.85</brightness>
+          <transparent type="bool">true</transparent>
+          <red type="float">0.38</red>
+          <green type="float">1.0</green>
+          <blue type="float">0.22</blue>
+        </color>
+        <color n="1">
+          <alpha type="float">0.85</alpha>
+          <antialiased type="bool">true</antialiased>
+          <brightness type="float">0.85</brightness>
+          <transparent type="bool">true</transparent>
+          <red type="float">1.0</red>
+          <green type="float">0.2</green>
+          <blue type="float">0.0</blue>
+        </color>
+      </palette>
+    </hud>
+
+    <weight n="0">
       <name>Pilot</name>
       <weight-lb>180</weight-lb>
       <max-lb>300</max-lb>
@@ -116,6 +170,12 @@ Eurocopter EC 665 "Tigre" simulation config.
   <input>
     <keyboard include="Nasal/tigre-keyboard.xml"/>
   </input>
+  
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
 
   <rotors>
     <main>
