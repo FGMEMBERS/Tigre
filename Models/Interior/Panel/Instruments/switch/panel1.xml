@@ -1,9 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <path>panel1.ac</path>
 
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>knob</object-name>
+  </animation>
   
-
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>knob</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <blue>  0.2 </blue>
+      <red>   0.2 </red>
+      <green> 0.2 </green>
+    </emission>
+  </animation>
+  
 </PropertyList>

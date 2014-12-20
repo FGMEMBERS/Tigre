@@ -7,7 +7,7 @@ OBJECT poly
 name "rotor"
 data 5
 rotor
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -89,7 +89,7 @@ OBJECT poly
 name "rotorup"
 data 7
 rotorup
-texture "colors.png"
+texture "mainrotor.png"
 texrep 1 1
 crease 30.000000
 numvert 194
