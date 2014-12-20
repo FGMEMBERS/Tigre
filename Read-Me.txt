@@ -26,11 +26,14 @@ Some useful keys:
 Thanks
 ======
 
+Fabien BARBIER for turret system
+
 ===============
 BARANGER Emmanuel
 June, 09, 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
 
 
@@ -61,9 +64,12 @@ Quelques touches utiles :
 Remerciements
 =============
 
+Fabien BARBIER pour le système des tourelles
+
 ===============
 BARANGER Emmanuel
 09 Juin 2009.
 
 http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
 embaranger@free.fr
