@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -101,35 +101,11 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -148,19 +124,19 @@
     <object-name>poignees</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Tigre/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
     <object-name>entreeair</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Tigre/Models/shadow.xml</path>
@@ -173,6 +149,7 @@
 
   <!-- Intérieur -->
   <model>
+    <usage>interior</usage>
     <path>Aircraft/Tigre/Models/Interior/interior.xml</path>
   </model>
 
@@ -385,6 +362,41 @@
       <z-m> -0.252 </z-m>
     </offsets>
   </model>
+  
+  <!--==========Turning Turret =====================-->
+  <animation>
+    <type>rotate</type>
+    <object-name>attachgun</object-name>
+    <object-name>supportgun</object-name>
+    <object-name>gun</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -5.8 </x-m>
+      <y-m>  0.0</y-m>
+      <z-m>  0.0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>gun</object-name>
+    <property>sim/model/turret[0]/pitch</property>
+    <offset-deg> -10 </offset-deg>
+    <center>
+      <x-m> -5.8 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -1.2 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
-
