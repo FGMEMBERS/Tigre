@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Prototype PT3R 98+23</name>
+        <texture>Liveries/2048x2048/PrototypePT3R.png</texture>
+
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
